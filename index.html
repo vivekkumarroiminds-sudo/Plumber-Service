@@ -1,1 +1,506 @@
-Test
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ProConnect Plumbing — Connect With Local Plumbers Fast</title>
+<meta name="description" content="Plumbing problem? Get connected with local, independent plumbers near you. Free to use. Request service online or call now.">
+
+<!-- ============================================================
+     GOOGLE ADS CONVERSION TRACKING  (gtag.js)
+     1) Replace AW-CONVERSION_ID below with your Google Ads ID
+        (Google Ads > Tools > Tags / "Google tag"). It looks like AW-123456789.
+     2) Create two conversion actions in Google Ads
+        (Goals > Conversions > New conversion action > Manual/Website):
+          - one for "Phone calls" (tracks tel: clicks)
+          - one for "Submit lead form"
+        Each gives you a label like "AbC-D_efG-h12_3-45". Paste them in
+        the CONVERSIONS object in the script at the bottom of this page.
+     ============================================================ -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-CONVERSION_ID"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-CONVERSION_ID');
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0a1f2e;
+    --navy-2:#0e2a3d;
+    --ink:#0a1f2e;
+    --water:#1ca7c4;
+    --water-2:#3fd0d6;
+    --cta:#ff6a1a;
+    --cta-2:#ff8a3d;
+    --cream:#f6f9fb;
+    --line:#dfe9ee;
+    --muted:#5d7480;
+    --white:#ffffff;
+    --shadow:0 18px 40px -18px rgba(10,31,46,.45);
+    --radius:16px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Hanken Grotesk',system-ui,sans-serif;
+    color:var(--ink);
+    background:var(--white);
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,.display{font-family:'Bricolage Grotesque',sans-serif;line-height:1.05;letter-spacing:-.02em}
+  a{color:inherit;text-decoration:none}
+  .wrap{width:min(1140px,92%);margin-inline:auto}
+  .btn{
+    display:inline-flex;align-items:center;gap:.55rem;justify-content:center;
+    font-weight:700;border-radius:999px;cursor:pointer;border:0;
+    transition:transform .15s ease, box-shadow .15s ease, background .2s ease;
+    font-family:'Hanken Grotesk',sans-serif;
+  }
+  .btn-cta{
+    background:linear-gradient(135deg,var(--cta),var(--cta-2));
+    color:#fff;padding:1rem 1.6rem;font-size:1.05rem;
+    box-shadow:0 14px 30px -10px rgba(255,106,26,.6);
+  }
+  .btn-cta:hover{transform:translateY(-2px);box-shadow:0 20px 38px -10px rgba(255,106,26,.7)}
+  .btn-ghost{background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.28);padding:.85rem 1.3rem}
+  .btn-ghost:hover{background:rgba(255,255,255,.2)}
+
+  /* ---------- HEADER ---------- */
+  header{position:sticky;top:0;z-index:50;background:rgba(10,31,46,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.08)}
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:.85rem 0}
+  .logo{display:flex;align-items:center;gap:.6rem;color:#fff;font-family:'Bricolage Grotesque';font-weight:800;font-size:1.3rem}
+  .logo .drop{width:30px;height:30px;border-radius:9px;background:linear-gradient(135deg,var(--water-2),var(--water));display:grid;place-items:center;color:var(--navy);font-size:1.1rem}
+  .nav-call{display:flex;align-items:center;gap:1rem}
+  .nav-call .phone{display:flex;flex-direction:column;text-align:right;color:#fff}
+  .nav-call .phone small{color:var(--water-2);font-size:.72rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase}
+  .nav-call .phone b{font-family:'Bricolage Grotesque';font-size:1.25rem;letter-spacing:-.01em}
+  .nav-call .btn-call{display:inline-flex;align-items:center;gap:.5rem;background:linear-gradient(135deg,var(--cta),var(--cta-2));color:#fff;padding:.7rem 1.15rem;border-radius:999px;font-weight:700;box-shadow:0 10px 22px -10px rgba(255,106,26,.7)}
+
+  /* ---------- HERO ---------- */
+  .hero{position:relative;background:radial-gradient(120% 120% at 80% -10%,#13384e 0%,var(--navy) 55%);color:#fff;overflow:hidden}
+  .hero::before{content:"";position:absolute;inset:0;background:
+     radial-gradient(60% 40% at 12% 110%, rgba(28,167,196,.35), transparent 60%);pointer-events:none}
+  .hero-grid{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:3rem;align-items:center;padding:3.4rem 0 4rem}
+  .eyebrow{display:inline-flex;align-items:center;gap:.5rem;background:rgba(63,208,214,.14);color:var(--water-2);border:1px solid rgba(63,208,214,.3);padding:.4rem .85rem;border-radius:999px;font-size:.8rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;margin-bottom:1.2rem}
+  .hero h1{font-size:clamp(2.2rem,5vw,3.5rem);font-weight:800;margin-bottom:1rem}
+  .hero h1 .hl{color:var(--water-2)}
+  .hero p.lead{font-size:1.15rem;color:#c5d6df;max-width:40ch;margin-bottom:1.6rem}
+  .hero-cta-row{display:flex;flex-wrap:wrap;gap:.9rem;margin-bottom:1.6rem}
+  .trust-row{display:flex;flex-wrap:wrap;gap:1.2rem 1.6rem;font-size:.92rem;color:#cddbe3}
+  .trust-row span{display:inline-flex;align-items:center;gap:.45rem}
+  .trust-row svg{flex:none}
+
+  /* ---------- FORM CARD ---------- */
+  .form-card{background:#fff;color:var(--ink);border-radius:20px;padding:1.7rem;box-shadow:var(--shadow)}
+  .form-card h3{font-size:1.4rem;font-weight:800;margin-bottom:.25rem}
+  .form-card .sub{color:var(--muted);font-size:.92rem;margin-bottom:1.1rem}
+  .field{margin-bottom:.8rem}
+  .field label{display:block;font-size:.82rem;font-weight:600;margin-bottom:.3rem;color:#33505d}
+  .field input,.field select,.field textarea{
+    width:100%;padding:.8rem .9rem;border:1.5px solid var(--line);border-radius:11px;font-size:1rem;
+    font-family:inherit;background:var(--cream);transition:border .15s,box-shadow .15s;
+  }
+  .field input:focus,.field select:focus,.field textarea:focus{outline:0;border-color:var(--water);box-shadow:0 0 0 3px rgba(28,167,196,.18);background:#fff}
+  .form-card .btn-cta{width:100%;margin-top:.4rem}
+  .form-note{font-size:.74rem;color:var(--muted);text-align:center;margin-top:.7rem;line-height:1.4}
+
+  /* ---------- SECTIONS ---------- */
+  section{padding:4rem 0}
+  .section-head{text-align:center;max-width:620px;margin:0 auto 2.6rem}
+  .section-head .kicker{color:var(--water);font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:.82rem;margin-bottom:.6rem}
+  .section-head h2{font-size:clamp(1.8rem,3.6vw,2.6rem);font-weight:800;margin-bottom:.7rem}
+  .section-head p{color:var(--muted);font-size:1.05rem}
+
+  /* steps */
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+  .step{background:var(--cream);border:1px solid var(--line);border-radius:var(--radius);padding:1.8rem 1.5rem;position:relative}
+  .step .num{width:42px;height:42px;border-radius:12px;background:var(--navy);color:#fff;font-family:'Bricolage Grotesque';font-weight:800;display:grid;place-items:center;font-size:1.2rem;margin-bottom:1rem}
+  .step h3{font-size:1.2rem;font-weight:700;margin-bottom:.4rem}
+  .step p{color:var(--muted);font-size:.96rem}
+
+  /* services */
+  .services{background:var(--navy);color:#fff}
+  .services .section-head h2,.services .section-head .kicker{color:#fff}
+  .services .section-head .kicker{color:var(--water-2)}
+  .services .section-head p{color:#aec3cf}
+  .svc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
+  .svc{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:1.4rem;transition:background .2s,transform .2s}
+  .svc:hover{background:rgba(63,208,214,.12);transform:translateY(-3px)}
+  .svc .ico{width:46px;height:46px;border-radius:12px;background:linear-gradient(135deg,var(--water-2),var(--water));display:grid;place-items:center;margin-bottom:.9rem;color:var(--navy)}
+  .svc h3{font-size:1.05rem;font-weight:700;margin-bottom:.3rem}
+  .svc p{font-size:.88rem;color:#a9c0cc}
+
+  /* why */
+  .why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.4rem;text-align:center}
+  .why .item .ico{width:56px;height:56px;border-radius:16px;background:var(--cream);border:1px solid var(--line);display:grid;place-items:center;margin:0 auto .9rem;color:var(--water)}
+  .why .item h3{font-size:1.1rem;font-weight:700;margin-bottom:.35rem}
+  .why .item p{color:var(--muted);font-size:.94rem}
+
+  /* reviews */
+  .reviews{background:var(--cream)}
+  .rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem}
+  .rev{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:1.6rem}
+  .stars{color:#ffb020;font-size:1.05rem;letter-spacing:.1em;margin-bottom:.7rem}
+  .rev p{font-size:.98rem;margin-bottom:1rem}
+  .rev .who{font-weight:700;font-size:.92rem}
+  .rev .where{color:var(--muted);font-size:.84rem}
+
+  /* faq */
+  .faq-list{max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:.7rem}
+  .faq-item{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff}
+  .faq-q{width:100%;text-align:left;background:none;border:0;padding:1.1rem 1.3rem;font-size:1.02rem;font-weight:700;font-family:'Hanken Grotesk';cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem;color:var(--ink)}
+  .faq-q .pm{flex:none;transition:transform .2s;color:var(--water);font-size:1.3rem}
+  .faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease;color:var(--muted)}
+  .faq-a div{padding:0 1.3rem 1.1rem}
+  .faq-item.open .faq-a{max-height:240px}
+  .faq-item.open .pm{transform:rotate(45deg)}
+
+  /* final cta */
+  .final{background:radial-gradient(110% 130% at 50% -20%,#13384e,var(--navy));color:#fff;text-align:center}
+  .final h2{font-size:clamp(1.9rem,4vw,2.8rem);font-weight:800;margin-bottom:.8rem}
+  .final p{color:#bdd1db;max-width:48ch;margin:0 auto 1.8rem;font-size:1.08rem}
+  .final .hero-cta-row{justify-content:center}
+
+  /* footer */
+  footer{background:#061520;color:#9fb4be;padding:3rem 0 2.2rem;font-size:.9rem}
+  .foot-top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1.5rem;align-items:center;padding-bottom:1.6rem;border-bottom:1px solid rgba(255,255,255,.08);margin-bottom:1.6rem}
+  .foot-top .logo{font-size:1.15rem}
+  .foot-links{display:flex;flex-wrap:wrap;gap:1.2rem}
+  .foot-links a:hover{color:#fff}
+  .disclaimer{font-size:.78rem;line-height:1.6;color:#7e95a0;max-width:none}
+  .disclaimer p{margin-bottom:.9rem}
+  .disclaimer strong{color:#9fb4be}
+  .copyright{margin-top:1.4rem;font-size:.8rem;color:#6a828e}
+
+  /* mobile call bar */
+  .mobile-bar{position:fixed;bottom:0;left:0;right:0;z-index:60;display:none;background:#fff;border-top:1px solid var(--line);padding:.6rem;box-shadow:0 -8px 24px -10px rgba(0,0,0,.25)}
+  .mobile-bar a{width:100%}
+
+  @media(max-width:920px){
+    .hero-grid{grid-template-columns:1fr;gap:2rem;padding:2.4rem 0 3rem}
+    .form-card{order:-1}
+    .steps{grid-template-columns:1fr}
+    .svc-grid{grid-template-columns:repeat(2,1fr)}
+    .why-grid{grid-template-columns:repeat(2,1fr)}
+    .rev-grid{grid-template-columns:1fr}
+    .nav-call .phone{display:none}
+  }
+  @media(max-width:560px){
+    .svc-grid{grid-template-columns:1fr}
+    .foot-top{flex-direction:column;align-items:flex-start}
+    .mobile-bar{display:block}
+    body{padding-bottom:72px}
+    .nav-call .btn-call span.lbl{display:none}
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header>
+  <div class="wrap nav">
+    <a href="#" class="logo"><span class="drop">💧</span> ProConnect Plumbing</a>
+    <div class="nav-call">
+      <div class="phone">
+        <small>Call now • Free to use</small>
+        <b>(800) 555-0199</b>
+      </div>
+      <a href="tel:+18005550199" class="btn-call">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span class="lbl">Call</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow">⚡ Fast local plumber matching</span>
+      <h1>Plumbing problem? Get connected with <span class="hl">local pros</span> near you.</h1>
+      <p class="lead">Leaks, clogs, water heaters, burst pipes — request service in seconds and connect with an independent, local plumber. Free to use, no obligation.</p>
+      <div class="hero-cta-row">
+        <a href="tel:+18005550199" class="btn btn-cta">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Call (800) 555-0199
+        </a>
+        <a href="#quote" class="btn btn-ghost">Request online →</a>
+      </div>
+      <div class="trust-row">
+        <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3fd0d6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Local independent pros</span>
+        <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3fd0d6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Free, no-obligation requests</span>
+        <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3fd0d6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Serving homeowners nationwide</span>
+      </div>
+    </div>
+
+    <!-- LEAD FORM -->
+    <div class="form-card" id="quote">
+      <h3>Get connected fast</h3>
+      <p class="sub">Tell us what you need and we'll match you with a local plumber.</p>
+      <form id="leadForm" novalidate>
+        <div class="field">
+          <label for="name">Full name</label>
+          <input id="name" name="name" type="text" placeholder="Jane Smith" required>
+        </div>
+        <div class="field">
+          <label for="phone">Phone number</label>
+          <input id="phone" name="phone" type="tel" placeholder="(555) 123-4567" required>
+        </div>
+        <div class="field">
+          <label for="zip">ZIP code</label>
+          <input id="zip" name="zip" type="text" inputmode="numeric" maxlength="5" placeholder="90210" required>
+        </div>
+        <div class="field">
+          <label for="service">What do you need?</label>
+          <select id="service" name="service" required>
+            <option value="">Select a service…</option>
+            <option>Leak repair</option>
+            <option>Drain / clog cleaning</option>
+            <option>Water heater</option>
+            <option>Toilet repair / install</option>
+            <option>Pipe / sewer line</option>
+            <option>Faucet / fixture</option>
+            <option>Emergency plumbing</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-cta">Request service →</button>
+        <p class="form-note">By submitting, you agree to be contacted by a local service provider at the number provided, including by phone or text. This is a free service. Consent is not a condition of purchase.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">How it works</div>
+      <h2>Three simple steps</h2>
+      <p>We make it easy to get connected with a plumber in your area.</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="num">1</div>
+        <h3>Tell us your issue</h3>
+        <p>Call or fill out the quick form with your ZIP code and the service you need.</p>
+      </div>
+      <div class="step">
+        <div class="num">2</div>
+        <h3>Get matched locally</h3>
+        <p>We connect you with an independent, local plumbing provider serving your area.</p>
+      </div>
+      <div class="step">
+        <div class="num">3</div>
+        <h3>Get the job done</h3>
+        <p>Discuss pricing and scheduling directly with the provider and book your service.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="services">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">Services</div>
+      <h2>Plumbing help for any job</h2>
+      <p>From a dripping faucet to a major repair, get connected with pros who handle it all.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc"><div class="ico">💧</div><h3>Leak Detection &amp; Repair</h3><p>Find and fix hidden leaks before they cause damage.</p></div>
+      <div class="svc"><div class="ico">🌀</div><h3>Drain &amp; Clog Cleaning</h3><p>Clear slow or blocked drains and main lines.</p></div>
+      <div class="svc"><div class="ico">🔥</div><h3>Water Heater Service</h3><p>Repair, replace, and install tank or tankless units.</p></div>
+      <div class="svc"><div class="ico">🚽</div><h3>Toilet Repair &amp; Install</h3><p>Running, clogged, or leaking toilets handled fast.</p></div>
+      <div class="svc"><div class="ico">🪠</div><h3>Pipe &amp; Sewer Lines</h3><p>Repair burst, frozen, or damaged pipes and sewer lines.</p></div>
+      <div class="svc"><div class="ico">🚿</div><h3>Faucets &amp; Fixtures</h3><p>Install or repair sinks, faucets, and shower fixtures.</p></div>
+      <div class="svc"><div class="ico">🏠</div><h3>Remodel &amp; Repipe</h3><p>Plumbing for kitchen and bath remodels.</p></div>
+      <div class="svc"><div class="ico">⏱️</div><h3>Emergency Plumbing</h3><p>Burst pipes and floods — get connected quickly.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY US ============ -->
+<section class="why">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">Why homeowners use us</div>
+      <h2>Simple, free, and fast</h2>
+    </div>
+    <div class="why-grid">
+      <div class="item">
+        <div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+        <h3>Quick connections</h3>
+        <p>Call or request online and get matched with a local provider.</p>
+      </div>
+      <div class="item">
+        <div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+        <h3>Local pros</h3>
+        <p>Connect with independent plumbers serving your community.</p>
+      </div>
+      <div class="item">
+        <div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+        <h3>No cost to use</h3>
+        <p>Our matching service is free with no obligation to hire.</p>
+      </div>
+      <div class="item">
+        <div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+        <h3>Nationwide coverage</h3>
+        <p>Serving homeowners across the United States.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REVIEWS ============ -->
+<section class="reviews">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">What homeowners say</div>
+      <h2>Trusted by people like you</h2>
+    </div>
+    <div class="rev-grid">
+      <div class="rev"><div class="stars">★★★★★</div><p>"Filled out the form and got a call back to schedule a plumber the same afternoon. Super easy."</p><div class="who">Maria R.</div><div class="where">Phoenix, AZ</div></div>
+      <div class="rev"><div class="stars">★★★★★</div><p>"Had a clogged main line and didn't know who to call. This made finding a local plumber painless."</p><div class="who">David K.</div><div class="where">Columbus, OH</div></div>
+      <div class="rev"><div class="stars">★★★★★</div><p>"Quick and free. I compared pricing with the provider directly before booking. Would use again."</p><div class="who">Tasha W.</div><div class="where">Tampa, FL</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">FAQ</div>
+      <h2>Common questions</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-q">Is this service really free? <span class="pm">+</span></button>
+        <div class="faq-a"><div>Yes. Connecting with a local provider through our site is free with no obligation. You discuss and agree on any service pricing directly with the provider.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Are you the plumber doing the work? <span class="pm">+</span></button>
+        <div class="faq-a"><div>No. We are a connection service that matches homeowners with independent, local plumbing providers. The provider you hire performs the work.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">How fast can I get connected? <span class="pm">+</span></button>
+        <div class="faq-a"><div>Most requests connect quickly. The fastest way is to call the number at the top of the page; you can also submit the online form.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">What areas do you cover? <span class="pm">+</span></button>
+        <div class="faq-a"><div>We connect homeowners with plumbing providers across the United States. Enter your ZIP code to get matched in your area.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="final">
+  <div class="wrap">
+    <h2>Need a plumber now?</h2>
+    <p>Get connected with a local plumbing provider in minutes. Free to use, no obligation.</p>
+    <div class="hero-cta-row">
+      <a href="tel:+18005550199" class="btn btn-cta">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Call (800) 555-0199
+      </a>
+      <a href="#quote" class="btn btn-ghost">Request online →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER + DISCLAIMERS ============ -->
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <a href="#" class="logo"><span class="drop">💧</span> ProConnect Plumbing</a>
+      <div class="foot-links">
+        <a href="#quote">Request service</a>
+        <a href="tel:+18005550199">Call us</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+      </div>
+    </div>
+    <div class="disclaimer">
+      <p><strong>Disclaimer:</strong> ProConnect Plumbing is a free service to assist homeowners in connecting with local service providers. All contractors/providers are independent and ProConnect Plumbing does not warrant or guarantee any work performed. It is the responsibility of the homeowner to verify that the hired contractor furnishes the necessary license and insurance required for the work being performed. All persons depicted in a photo or video are actors or models and not contractors listed on ProConnect Plumbing.</p>
+      <p>Same-day and 24/7 emergency services are subject to provider participation, location, technician availability, and demand. Availability is not guaranteed and may vary by market and appointment capacity.</p>
+    </div>
+    <div class="copyright">© <span id="year"></span> ProConnect Plumbing. All rights reserved.</div>
+  </div>
+</footer>
+
+<!-- ============ MOBILE STICKY CALL BAR ============ -->
+<div class="mobile-bar">
+  <a href="tel:+18005550199" class="btn btn-cta">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    Tap to call (800) 555-0199
+  </a>
+</div>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-q').forEach(function(q){
+    q.addEventListener('click', function(){
+      var item = q.closest('.faq-item');
+      var wasOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(function(i){i.classList.remove('open')});
+      if(!wasOpen) item.classList.add('open');
+    });
+  });
+
+  // ============================================================
+  //  CONVERSION TRACKING  — paste your conversion labels here
+  //  Format: 'AW-CONVERSION_ID/CONVERSION_LABEL'
+  // ============================================================
+  var CONVERSIONS = {
+    call: 'AW-CONVERSION_ID/CALL_LABEL',   // "Phone calls" conversion action
+    form: 'AW-CONVERSION_ID/FORM_LABEL'    // "Submit lead form" conversion action
+  };
+
+  function fireConversion(sendTo, callback){
+    if (typeof gtag === 'function' && sendTo.indexOf('CONVERSION_ID') === -1){
+      gtag('event', 'conversion', { send_to: sendTo, event_callback: callback });
+      // safety: don't let a slow tag block navigation
+      if (callback) setTimeout(callback, 800);
+    } else if (callback){
+      callback();
+    }
+  }
+
+  // Track every click-to-call (header, hero, final CTA, mobile bar)
+  document.querySelectorAll('a[href^="tel:"]').forEach(function(link){
+    link.addEventListener('click', function(){
+      fireConversion(CONVERSIONS.call);
+    });
+  });
+
+  // Lead form handler — REPLACE the TODO with your lead post / MarketCall integration
+  document.getElementById('leadForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    var f = e.target;
+    if(!f.name.value || !f.phone.value || !f.zip.value || !f.service.value){
+      alert('Please fill out all fields so we can connect you.');
+      return;
+    }
+    // TODO: send lead data to your CRM / MarketCall offer endpoint here.
+    // Example: fetch('YOUR_LEAD_POST_URL', {method:'POST', body:new FormData(f)})
+
+    // Record the Google Ads conversion for the submitted lead
+    fireConversion(CONVERSIONS.form);
+
+    alert('Thanks! A local plumbing provider will reach out shortly. For fastest service, call (800) 555-0199.');
+    f.reset();
+  });
+</script>
+</body>
+</html>
