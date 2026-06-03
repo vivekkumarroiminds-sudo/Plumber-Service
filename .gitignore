@@ -1,0 +1,5 @@
+# Redundant inner copy — root is now the working/deploy source
+Plumber-Service/
+
+# Local Claude Code config
+.claude/
