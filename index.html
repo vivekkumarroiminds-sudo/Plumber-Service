@@ -2,9 +2,32 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Emergency Plumbing Service — Water Damage Restoration & 24/7 Plumbers</title>
 <meta name="description" content="Burst pipe or flooding? Get connected with local emergency plumbers & water damage restoration pros. Fast water extraction, structural drying & mold prevention. Works with your insurance. Free to use — call now.">
+
+<!-- ============================================================
+     CANONICAL / INDEXING
+     Replace https://example.com/ below with your real live domain
+     (e.g. your GitHub Pages URL) so search engines and Google Ads
+     see one canonical address. -->
+<link rel="canonical" href="https://example.com/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#0a1f2e">
+<meta name="format-detection" content="telephone=yes">
+
+<!-- Open Graph / social preview (helps ad/landing-page trust signals) -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Emergency Plumbing Service">
+<meta property="og:title" content="Emergency Plumbing Service — Water Damage Restoration & 24/7 Plumbers">
+<meta property="og:description" content="Burst pipe or flooding? Get connected with local emergency plumbers & water damage restoration pros. Free to use — call now.">
+<meta property="og:url" content="https://example.com/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Emergency Plumbing Service — Water Damage Restoration & 24/7 Plumbers">
+<meta name="twitter:description" content="Get connected with local emergency plumbers & water damage restoration pros. Free to use — call now.">
+
+<!-- Inline SVG favicon (no extra asset / request) -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230a1f2e'/%3E%3Cpath d='M16 6c4 5 6 8 6 11a6 6 0 0 1-12 0c0-3 2-6 6-11z' fill='%233fd0d6'/%3E%3C/svg%3E">
 
 <!-- ============================================================
      GOOGLE ADS CONVERSION TRACKING  (gtag.js)
@@ -17,6 +40,7 @@
         Each gives you a label like "AbC-D_efG-h12_3-45". Paste them in
         the CONVERSIONS object in the script at the bottom of this page.
      ============================================================ -->
+<link rel="preconnect" href="https://www.googletagmanager.com">
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-CONVERSION_ID"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -28,6 +52,42 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- ============================================================
+     STRUCTURED DATA — helps Google understand the page.
+     Organization clarifies this is a referral service; FAQPage
+     mirrors the visible FAQ exactly (required by Google policy). -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Emergency Plumbing Service",
+  "url": "https://example.com/",
+  "description": "A free service that connects homeowners with independent, local emergency plumbing and water damage restoration providers. We are a referral and matching service only and do not perform the work ourselves.",
+  "areaServed": "US",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+1-800-555-0199",
+    "contactType": "customer service",
+    "areaServed": "US",
+    "availableLanguage": "English"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"What should I do immediately after water damage?","acceptedAnswer":{"@type":"Answer","text":"Shut off the water source if you safely can and call us right away. Avoid the affected areas and don't attempt any electrical repairs. We'll connect you with a local pro who can respond quickly to assess the damage and begin cleanup."}},
+    {"@type":"Question","name":"How fast can someone respond?","acceptedAnswer":{"@type":"Answer","text":"We prioritize urgent calls and aim to connect you with a local provider as fast as possible. Quick action is key to preventing further damage and mold growth, so emergencies come first. The fastest way is to call the number at the top of the page."}},
+    {"@type":"Question","name":"Does insurance cover water damage?","acceptedAnswer":{"@type":"Answer","text":"In many cases, yes — it depends on your policy and the source of the damage. The local providers we connect you with can work directly with your insurance company to help simplify the claims process."}},
+    {"@type":"Question","name":"How long does restoration take?","acceptedAnswer":{"@type":"Answer","text":"It varies with the extent of the damage. Minor cases may take a few days, while larger projects can take longer. Your provider will give a clear estimate after inspecting the damage."}},
+    {"@type":"Question","name":"Can mold develop after water damage?","acceptedAnswer":{"@type":"Answer","text":"Yes — untreated moisture can lead to mold within 24 to 48 hours. That's why providers don't just remove the water but also dry the area thoroughly and use mold-prevention methods to protect your home."}},
+    {"@type":"Question","name":"Is this service really free?","acceptedAnswer":{"@type":"Answer","text":"Yes. Connecting with a local provider through our site is free with no obligation. You discuss and agree on any service pricing directly with the provider."}}
+  ]
+}
+</script>
 <style>
   :root{
     --navy:#0a1f2e;
@@ -39,7 +99,7 @@
     --cta-2:#ff8a3d;
     --cream:#f6f9fb;
     --line:#dfe9ee;
-    --muted:#5d7480;
+    --muted:#4f6671;
     --white:#ffffff;
     --shadow:0 18px 40px -18px rgba(10,31,46,.45);
     --radius:16px;
@@ -55,12 +115,20 @@
   }
   h1,h2,h3,.display{font-family:'Bricolage Grotesque',sans-serif;line-height:1.05;letter-spacing:-.02em}
   a{color:inherit;text-decoration:none}
+  img,svg{max-width:100%}
   .wrap{width:min(1140px,92%);margin-inline:auto}
+
+  /* Accessibility helpers */
+  .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+  .skip-link{position:absolute;left:-999px;top:0;z-index:200;background:var(--cta);color:#fff;padding:.7rem 1.1rem;border-radius:0 0 10px 0;font-weight:700}
+  .skip-link:focus{left:0}
+  :focus-visible{outline:3px solid var(--water-2);outline-offset:2px;border-radius:6px}
+
   .btn{
     display:inline-flex;align-items:center;gap:.55rem;justify-content:center;
     font-weight:700;border-radius:999px;cursor:pointer;border:0;
     transition:transform .15s ease, box-shadow .15s ease, background .2s ease;
-    font-family:'Hanken Grotesk',sans-serif;
+    font-family:'Hanken Grotesk',sans-serif;min-height:48px;
   }
   .btn-cta{
     background:linear-gradient(135deg,var(--cta),var(--cta-2));
@@ -80,7 +148,7 @@
   .nav-call .phone{display:flex;flex-direction:column;text-align:right;color:#fff}
   .nav-call .phone small{color:var(--water-2);font-size:.72rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase}
   .nav-call .phone b{font-family:'Bricolage Grotesque';font-size:1.25rem;letter-spacing:-.01em}
-  .nav-call .btn-call{display:inline-flex;align-items:center;gap:.5rem;background:linear-gradient(135deg,var(--cta),var(--cta-2));color:#fff;padding:.7rem 1.15rem;border-radius:999px;font-weight:700;box-shadow:0 10px 22px -10px rgba(255,106,26,.7)}
+  .nav-call .btn-call{display:inline-flex;align-items:center;gap:.5rem;background:linear-gradient(135deg,var(--cta),var(--cta-2));color:#fff;padding:.7rem 1.15rem;border-radius:999px;font-weight:700;box-shadow:0 10px 22px -10px rgba(255,106,26,.7);min-height:44px}
 
   /* ---------- HERO ---------- */
   .hero{position:relative;background:radial-gradient(120% 120% at 80% -10%,#13384e 0%,var(--navy) 55%);color:#fff;overflow:hidden}
@@ -90,25 +158,32 @@
   .eyebrow{display:inline-flex;align-items:center;gap:.5rem;background:rgba(63,208,214,.14);color:var(--water-2);border:1px solid rgba(63,208,214,.3);padding:.4rem .85rem;border-radius:999px;font-size:.8rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;margin-bottom:1.2rem}
   .hero h1{font-size:clamp(2.2rem,5vw,3.5rem);font-weight:800;margin-bottom:1rem}
   .hero h1 .hl{color:var(--water-2)}
-  .hero p.lead{font-size:1.15rem;color:#c5d6df;max-width:40ch;margin-bottom:1.6rem}
+  .hero p.lead{font-size:1.15rem;color:#d2e1e9;max-width:40ch;margin-bottom:1.6rem}
   .hero-cta-row{display:flex;flex-wrap:wrap;gap:.9rem;margin-bottom:1.6rem}
-  .trust-row{display:flex;flex-wrap:wrap;gap:1.2rem 1.6rem;font-size:.92rem;color:#cddbe3}
+  .trust-row{display:flex;flex-wrap:wrap;gap:1.2rem 1.6rem;font-size:.92rem;color:#dbe7ee}
   .trust-row span{display:inline-flex;align-items:center;gap:.45rem}
   .trust-row svg{flex:none}
 
   /* ---------- FORM CARD ---------- */
   .form-card{background:#fff;color:var(--ink);border-radius:20px;padding:1.7rem;box-shadow:var(--shadow)}
-  .form-card h3{font-size:1.4rem;font-weight:800;margin-bottom:.25rem}
+  .form-card h2{font-size:1.4rem;font-weight:800;margin-bottom:.25rem}
   .form-card .sub{color:var(--muted);font-size:.92rem;margin-bottom:1.1rem}
   .field{margin-bottom:.8rem}
   .field label{display:block;font-size:.82rem;font-weight:600;margin-bottom:.3rem;color:#33505d}
+  .field label .req{color:var(--cta)}
   .field input,.field select,.field textarea{
     width:100%;padding:.8rem .9rem;border:1.5px solid var(--line);border-radius:11px;font-size:1rem;
-    font-family:inherit;background:var(--cream);transition:border .15s,box-shadow .15s;
+    font-family:inherit;background:var(--cream);transition:border .15s,box-shadow .15s;min-height:48px;
   }
   .field input:focus,.field select:focus,.field textarea:focus{outline:0;border-color:var(--water);box-shadow:0 0 0 3px rgba(28,167,196,.18);background:#fff}
+  .field.invalid input,.field.invalid select{border-color:#d33a2c;background:#fff5f4}
+  .err-msg{display:none;color:#c62a1d;font-size:.78rem;font-weight:600;margin-top:.3rem}
+  .field.invalid .err-msg{display:block}
   .form-card .btn-cta{width:100%;margin-top:.4rem}
-  .form-note{font-size:.74rem;color:var(--muted);text-align:center;margin-top:.7rem;line-height:1.4}
+  .form-note{font-size:.74rem;color:var(--muted);text-align:center;margin-top:.7rem;line-height:1.45}
+  .form-note a{text-decoration:underline}
+  .form-status{margin-top:.8rem;font-size:.9rem;font-weight:600;text-align:center;color:#0f7a3d}
+  .form-status:empty{margin-top:0}
 
   /* ---------- SECTIONS ---------- */
   section{padding:4rem 0}
@@ -128,13 +203,13 @@
   .services{background:var(--navy);color:#fff}
   .services .section-head h2,.services .section-head .kicker{color:#fff}
   .services .section-head .kicker{color:var(--water-2)}
-  .services .section-head p{color:#aec3cf}
+  .services .section-head p{color:#bcd0db}
   .svc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
   .svc{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:1.4rem;transition:background .2s,transform .2s}
   .svc:hover{background:rgba(63,208,214,.12);transform:translateY(-3px)}
-  .svc .ico{width:46px;height:46px;border-radius:12px;background:linear-gradient(135deg,var(--water-2),var(--water));display:grid;place-items:center;margin-bottom:.9rem;color:var(--navy)}
+  .svc .ico{width:46px;height:46px;border-radius:12px;background:linear-gradient(135deg,var(--water-2),var(--water));display:grid;place-items:center;margin-bottom:.9rem;color:var(--navy);font-size:1.4rem}
   .svc h3{font-size:1.05rem;font-weight:700;margin-bottom:.3rem}
-  .svc p{font-size:.88rem;color:#a9c0cc}
+  .svc p{font-size:.88rem;color:#b6ccd7}
 
   /* why */
   .why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.4rem;text-align:center}
@@ -146,7 +221,7 @@
   .reviews{background:var(--cream)}
   .rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem}
   .rev{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:1.6rem}
-  .stars{color:#ffb020;font-size:1.05rem;letter-spacing:.1em;margin-bottom:.7rem}
+  .stars{color:#e08a00;font-size:1.05rem;letter-spacing:.1em;margin-bottom:.7rem}
   .rev p{font-size:.98rem;margin-bottom:1rem}
   .rev .who{font-weight:700;font-size:.92rem}
   .rev .where{color:var(--muted);font-size:.84rem}
@@ -154,7 +229,7 @@
   /* faq */
   .faq-list{max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:.7rem}
   .faq-item{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff}
-  .faq-q{width:100%;text-align:left;background:none;border:0;padding:1.1rem 1.3rem;font-size:1.02rem;font-weight:700;font-family:'Hanken Grotesk';cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem;color:var(--ink)}
+  .faq-q{width:100%;text-align:left;background:none;border:0;padding:1.1rem 1.3rem;font-size:1.02rem;font-weight:700;font-family:'Hanken Grotesk';cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem;color:var(--ink);min-height:48px}
   .faq-q .pm{flex:none;transition:transform .2s;color:var(--water);font-size:1.3rem}
   .faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease;color:var(--muted)}
   .faq-a div{padding:0 1.3rem 1.1rem}
@@ -164,22 +239,24 @@
   /* final cta */
   .final{background:radial-gradient(110% 130% at 50% -20%,#13384e,var(--navy));color:#fff;text-align:center}
   .final h2{font-size:clamp(1.9rem,4vw,2.8rem);font-weight:800;margin-bottom:.8rem}
-  .final p{color:#bdd1db;max-width:48ch;margin:0 auto 1.8rem;font-size:1.08rem}
+  .final p{color:#cbdde6;max-width:48ch;margin:0 auto 1.8rem;font-size:1.08rem}
   .final .hero-cta-row{justify-content:center}
 
   /* footer */
-  footer{background:#061520;color:#9fb4be;padding:3rem 0 2.2rem;font-size:.9rem}
+  footer{background:#061520;color:#a8bcc6;padding:3rem 0 2.2rem;font-size:.9rem}
   .foot-top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1.5rem;align-items:center;padding-bottom:1.6rem;border-bottom:1px solid rgba(255,255,255,.08);margin-bottom:1.6rem}
   .foot-top .logo{font-size:1.15rem}
   .foot-links{display:flex;flex-wrap:wrap;gap:1.2rem}
   .foot-links a:hover{color:#fff}
-  .disclaimer{font-size:.78rem;line-height:1.6;color:#7e95a0;max-width:none}
+  .foot-contact{font-size:.84rem;color:#8da3ae;margin-bottom:1.4rem}
+  .foot-contact a{color:var(--water-2);text-decoration:underline}
+  .disclaimer{font-size:.78rem;line-height:1.6;color:#869ca7;max-width:none}
   .disclaimer p{margin-bottom:.9rem}
-  .disclaimer strong{color:#9fb4be}
-  .copyright{margin-top:1.4rem;font-size:.8rem;color:#6a828e}
+  .disclaimer strong{color:#a8bcc6}
+  .copyright{margin-top:1.4rem;font-size:.8rem;color:#74909c}
 
   /* mobile call bar */
-  .mobile-bar{position:fixed;bottom:0;left:0;right:0;z-index:60;display:none;background:#fff;border-top:1px solid var(--line);padding:.6rem;box-shadow:0 -8px 24px -10px rgba(0,0,0,.25)}
+  .mobile-bar{position:fixed;bottom:0;left:0;right:0;z-index:60;display:none;background:#fff;border-top:1px solid var(--line);padding:.6rem;padding-bottom:calc(.6rem + env(safe-area-inset-bottom));box-shadow:0 -8px 24px -10px rgba(0,0,0,.25)}
   .mobile-bar a{width:100%}
 
   @media(max-width:920px){
@@ -192,78 +269,91 @@
     .nav-call .phone{display:none}
   }
   @media(max-width:560px){
+    section{padding:3rem 0}
     .svc-grid{grid-template-columns:1fr}
     .foot-top{flex-direction:column;align-items:flex-start}
     .mobile-bar{display:block}
-    body{padding-bottom:72px}
+    body{padding-bottom:calc(76px + env(safe-area-inset-bottom))}
     .nav-call .btn-call span.lbl{display:none}
+  }
+
+  /* respect users who prefer less motion */
+  @media(prefers-reduced-motion:reduce){
+    *{animation-duration:.001ms!important;transition-duration:.001ms!important;scroll-behavior:auto!important}
   }
 </style>
 </head>
 <body>
 
+<a href="#main" class="skip-link">Skip to main content</a>
+
 <!-- ============ HEADER ============ -->
 <header>
   <div class="wrap nav">
-    <a href="#" class="logo"><span class="drop">💧</span> Emergency Plumbing Service</a>
+    <a href="#" class="logo"><span class="drop" aria-hidden="true">💧</span> Emergency Plumbing Service</a>
     <div class="nav-call">
       <div class="phone">
         <small>Call now • Free to use</small>
         <b>(800) 555-0199</b>
       </div>
-      <a href="tel:+18005550199" class="btn-call">
-        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <a href="tel:+18005550199" class="btn-call" aria-label="Call Emergency Plumbing Service at (800) 555-0199">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
         <span class="lbl">Call</span>
       </a>
     </div>
   </div>
 </header>
 
+<main id="main">
+
 <!-- ============ HERO ============ -->
-<section class="hero">
+<section class="hero" aria-labelledby="hero-title">
   <div class="wrap hero-grid">
     <div class="hero-copy">
-      <span class="eyebrow">⚡ 24/7 emergency water damage response</span>
-      <h1>Don't let water damage <span class="hl">ruin your home</span>.</h1>
-      <p class="lead">Burst pipes, leaks, and flooding — get connected with local emergency plumbers and water damage restoration pros. Fast water extraction & structural drying. Free to use, no obligation.</p>
+      <span class="eyebrow"><span aria-hidden="true">⚡</span> 24/7 emergency water damage response</span>
+      <h1 id="hero-title">Don't let water damage <span class="hl">ruin your home</span>.</h1>
+      <p class="lead">Burst pipes, leaks, and flooding — get connected with local emergency plumbers and water damage restoration pros. Fast water extraction &amp; structural drying. Free to use, no obligation.</p>
       <div class="hero-cta-row">
-        <a href="tel:+18005550199" class="btn btn-cta">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <a href="tel:+18005550199" class="btn btn-cta" aria-label="Call now at (800) 555-0199">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
           Call (800) 555-0199
         </a>
         <a href="#quote" class="btn btn-ghost">Request help →</a>
       </div>
       <div class="trust-row">
-        <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3fd0d6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Certified, licensed local pros</span>
-        <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3fd0d6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Works directly with your insurance</span>
-        <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3fd0d6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> 24/7 emergency response</span>
+        <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3fd0d6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg> Certified, licensed local pros</span>
+        <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3fd0d6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg> Works directly with your insurance</span>
+        <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3fd0d6" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg> 24/7 emergency response</span>
       </div>
     </div>
 
     <!-- LEAD FORM -->
     <div class="form-card" id="quote">
-      <h3>Get emergency help fast</h3>
+      <h2>Get emergency help fast</h2>
       <p class="sub">Tell us what happened and we'll match you with a local emergency pro.</p>
       <form id="leadForm" novalidate>
         <div class="field">
-          <label for="name">Full name</label>
-          <input id="name" name="name" type="text" placeholder="Jane Smith" required>
+          <label for="name">Full name <span class="req" aria-hidden="true">*</span></label>
+          <input id="name" name="name" type="text" placeholder="Jane Smith" autocomplete="name" autocapitalize="words" required aria-required="true" aria-describedby="err-name">
+          <span class="err-msg" id="err-name">Please enter your name.</span>
         </div>
         <div class="field">
-          <label for="phone">Phone number</label>
-          <input id="phone" name="phone" type="tel" placeholder="(555) 123-4567" required>
+          <label for="phone">Phone number <span class="req" aria-hidden="true">*</span></label>
+          <input id="phone" name="phone" type="tel" placeholder="(555) 123-4567" autocomplete="tel" inputmode="tel" required aria-required="true" aria-describedby="err-phone">
+          <span class="err-msg" id="err-phone">Please enter a valid phone number.</span>
         </div>
         <div class="field">
-          <label for="zip">ZIP code</label>
-          <input id="zip" name="zip" type="text" inputmode="numeric" maxlength="5" placeholder="90210" required>
+          <label for="zip">ZIP code <span class="req" aria-hidden="true">*</span></label>
+          <input id="zip" name="zip" type="text" inputmode="numeric" autocomplete="postal-code" pattern="[0-9]{5}" maxlength="5" placeholder="90210" required aria-required="true" aria-describedby="err-zip">
+          <span class="err-msg" id="err-zip">Please enter a 5-digit ZIP code.</span>
         </div>
         <div class="field">
-          <label for="service">What do you need?</label>
-          <select id="service" name="service" required>
+          <label for="service">What do you need? <span class="req" aria-hidden="true">*</span></label>
+          <select id="service" name="service" required aria-required="true" aria-describedby="err-service">
             <option value="">Select a service…</option>
             <option>Water damage / flooding</option>
             <option>Burst or leaking pipe</option>
-            <option>Water extraction & drying</option>
+            <option>Water extraction &amp; drying</option>
             <option>Mold / moisture problem</option>
             <option>Sewage backup</option>
             <option>Water heater</option>
@@ -271,35 +361,37 @@
             <option>Storm / roof leak</option>
             <option>Other emergency plumbing</option>
           </select>
+          <span class="err-msg" id="err-service">Please choose the service you need.</span>
         </div>
         <button type="submit" class="btn btn-cta">Request service →</button>
-        <p class="form-note">By submitting, you agree to be contacted by a local service provider at the number provided, including by phone or text. This is a free service. Consent is not a condition of purchase.</p>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        <p class="form-note">By submitting, you agree to be contacted by a local service provider at the number provided, including by phone, text, or autodialed/pre-recorded calls. Message/data rates may apply. This is a free service and consent is not a condition of purchase. See our <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms of Service</a>.</p>
       </form>
     </div>
   </div>
 </section>
 
 <!-- ============ HOW IT WORKS ============ -->
-<section>
+<section aria-labelledby="how-title">
   <div class="wrap">
     <div class="section-head">
       <div class="kicker">How it works</div>
-      <h2>Three simple steps</h2>
+      <h2 id="how-title">Three simple steps</h2>
       <p>We make it easy to get connected with an emergency pro in your area.</p>
     </div>
     <div class="steps">
       <div class="step">
-        <div class="num">1</div>
+        <div class="num" aria-hidden="true">1</div>
         <h3>Tell us what happened</h3>
         <p>Call or fill out the quick form with your ZIP code and the emergency you're facing.</p>
       </div>
       <div class="step">
-        <div class="num">2</div>
+        <div class="num" aria-hidden="true">2</div>
         <h3>Get matched locally</h3>
-        <p>We connect you with an independent, local plumbing & water damage restoration provider near you.</p>
+        <p>We connect you with an independent, local plumbing &amp; water damage restoration provider near you.</p>
       </div>
       <div class="step">
-        <div class="num">3</div>
+        <div class="num" aria-hidden="true">3</div>
         <h3>Stop the damage</h3>
         <p>Your provider extracts water, dries the structure, and handles repairs — and can work with your insurance.</p>
       </div>
@@ -308,51 +400,51 @@
 </section>
 
 <!-- ============ SERVICES ============ -->
-<section class="services">
+<section class="services" aria-labelledby="svc-title">
   <div class="wrap">
     <div class="section-head">
       <div class="kicker">Services</div>
-      <h2>Water damage & plumbing emergencies</h2>
+      <h2 id="svc-title">Water damage &amp; plumbing emergencies</h2>
       <p>From a burst pipe to a flooded basement, get connected with pros who handle it all.</p>
     </div>
     <div class="svc-grid">
-      <div class="svc"><div class="ico">💧</div><h3>Water Extraction &amp; Drying</h3><p>Remove standing water and dry out the structure fast.</p></div>
-      <div class="svc"><div class="ico">🚰</div><h3>Burst &amp; Frozen Pipes</h3><p>Emergency repair for burst, frozen, or leaking pipes.</p></div>
-      <div class="svc"><div class="ico">🔍</div><h3>Leak Detection &amp; Repair</h3><p>Find and fix hidden leaks before they spread.</p></div>
-      <div class="svc"><div class="ico">🦠</div><h3>Mold Prevention</h3><p>Treat moisture within 24–48 hrs to stop mold growth.</p></div>
-      <div class="svc"><div class="ico">🌊</div><h3>Storm &amp; Flood Cleanup</h3><p>Recover from storm flooding and roof leaks.</p></div>
-      <div class="svc"><div class="ico">🪠</div><h3>Sewage &amp; Drain Backups</h3><p>Clear blockages and clean up backups safely.</p></div>
-      <div class="svc"><div class="ico">🔥</div><h3>Water Heater Service</h3><p>Repair or replace failed tank &amp; tankless units.</p></div>
-      <div class="svc"><div class="ico">📋</div><h3>Insurance Claim Support</h3><p>Providers can work directly with your insurer.</p></div>
+      <div class="svc"><div class="ico" aria-hidden="true">💧</div><h3>Water Extraction &amp; Drying</h3><p>Remove standing water and dry out the structure fast.</p></div>
+      <div class="svc"><div class="ico" aria-hidden="true">🚰</div><h3>Burst &amp; Frozen Pipes</h3><p>Emergency repair for burst, frozen, or leaking pipes.</p></div>
+      <div class="svc"><div class="ico" aria-hidden="true">🔍</div><h3>Leak Detection &amp; Repair</h3><p>Find and fix hidden leaks before they spread.</p></div>
+      <div class="svc"><div class="ico" aria-hidden="true">🦠</div><h3>Mold Prevention</h3><p>Treat moisture within 24–48 hrs to stop mold growth.</p></div>
+      <div class="svc"><div class="ico" aria-hidden="true">🌊</div><h3>Storm &amp; Flood Cleanup</h3><p>Recover from storm flooding and roof leaks.</p></div>
+      <div class="svc"><div class="ico" aria-hidden="true">🪠</div><h3>Sewage &amp; Drain Backups</h3><p>Clear blockages and clean up backups safely.</p></div>
+      <div class="svc"><div class="ico" aria-hidden="true">🔥</div><h3>Water Heater Service</h3><p>Repair or replace failed tank &amp; tankless units.</p></div>
+      <div class="svc"><div class="ico" aria-hidden="true">📋</div><h3>Insurance Claim Support</h3><p>Providers can work directly with your insurer.</p></div>
     </div>
   </div>
 </section>
 
 <!-- ============ WHY US ============ -->
-<section class="why">
+<section class="why" aria-labelledby="why-title">
   <div class="wrap">
     <div class="section-head">
       <div class="kicker">Why homeowners use us</div>
-      <h2>Fast, certified, and stress-free</h2>
+      <h2 id="why-title">Fast, certified, and stress-free</h2>
     </div>
     <div class="why-grid">
       <div class="item">
-        <div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+        <div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
         <h3>24/7 response</h3>
         <p>Call or request online any time and get matched with a local provider — day or night.</p>
       </div>
       <div class="item">
-        <div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M21 12c0 1.66-4.03 3-9 3s-9-1.34-9-3"/><path d="M12 22c4.97 0 9-1.34 9-3V5c0-1.66-4.03-3-9-3S3 3.34 3 5v14c0 1.66 4.03 3 9 3z"/></svg></div>
+        <div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 12l2 2 4-4"/><path d="M21 12c0 1.66-4.03 3-9 3s-9-1.34-9-3"/><path d="M12 22c4.97 0 9-1.34 9-3V5c0-1.66-4.03-3-9-3S3 3.34 3 5v14c0 1.66 4.03 3 9 3z"/></svg></div>
         <h3>Certified local pros</h3>
-        <p>Connect with IICRC-certified, licensed & insured independent providers.</p>
+        <p>Connect with IICRC-certified, licensed &amp; insured independent providers.</p>
       </div>
       <div class="item">
-        <div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="m9 15 2 2 4-4"/></svg></div>
+        <div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="m9 15 2 2 4-4"/></svg></div>
         <h3>Works with your insurance</h3>
         <p>Providers help simplify the claims process and bill your insurer directly.</p>
       </div>
       <div class="item">
-        <div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+        <div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
         <h3>No cost to use</h3>
         <p>Our matching service is free with no obligation to hire.</p>
       </div>
@@ -361,67 +453,67 @@
 </section>
 
 <!-- ============ REVIEWS ============ -->
-<section class="reviews">
+<section class="reviews" aria-labelledby="rev-title">
   <div class="wrap">
     <div class="section-head">
       <div class="kicker">What homeowners say</div>
-      <h2>Trusted by people like you</h2>
+      <h2 id="rev-title">Trusted by people like you</h2>
     </div>
     <div class="rev-grid">
-      <div class="rev"><div class="stars">★★★★★</div><p>"Storm damage left a huge mess at our home. The team arrived quickly, handled everything professionally, and restored our space beautifully. So thankful for the fast, reliable service!"</p><div class="who">Robert T.</div><div class="where">Verified homeowner</div></div>
-      <div class="rev"><div class="stars">★★★★★</div><p>"They helped us recover quickly after serious water damage. The team was professional, efficient, and thorough. Great communication and quality work from start to finish. Highly recommended!"</p><div class="who">Jason M.</div><div class="where">Verified homeowner</div></div>
-      <div class="rev"><div class="stars">★★★★★</div><p>"After a roof leak, their team responded quickly and restored our home with care and professionalism. They kept us updated and did an excellent job. Highly recommend!"</p><div class="who">Emily R.</div><div class="where">Verified homeowner</div></div>
-      <div class="rev"><div class="stars">★★★★★</div><p>"Our attic had serious mold and moisture problems. The team was thorough, professional, and explained everything clearly. They made the entire process stress-free and did an excellent job!"</p><div class="who">Linda S.</div><div class="where">Verified homeowner</div></div>
-      <div class="rev"><div class="stars">★★★★★</div><p>"Very impressed with the crawl space cleanup. The team was professional, arrived on time, and explained everything clearly. Outstanding service and results from start to finish."</p><div class="who">Nina K.</div><div class="where">Verified homeowner</div></div>
-      <div class="rev"><div class="stars">★★★★★</div><p>"A pipe burst overnight and flooded the kitchen. I called in the morning and was connected with a local crew the same day. Water gone, everything dried out. Lifesavers."</p><div class="who">Marcus B.</div><div class="where">Verified homeowner</div></div>
+      <div class="rev"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><p>"Storm damage left a huge mess at our home. The team arrived quickly, handled everything professionally, and restored our space beautifully. So thankful for the fast, reliable service!"</p><div class="who">Robert T.</div><div class="where">Verified homeowner</div></div>
+      <div class="rev"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><p>"They helped us recover quickly after serious water damage. The team was professional, efficient, and thorough. Great communication and quality work from start to finish. Highly recommended!"</p><div class="who">Jason M.</div><div class="where">Verified homeowner</div></div>
+      <div class="rev"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><p>"After a roof leak, their team responded quickly and restored our home with care and professionalism. They kept us updated and did an excellent job. Highly recommend!"</p><div class="who">Emily R.</div><div class="where">Verified homeowner</div></div>
+      <div class="rev"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><p>"Our attic had serious mold and moisture problems. The team was thorough, professional, and explained everything clearly. They made the entire process stress-free and did an excellent job!"</p><div class="who">Linda S.</div><div class="where">Verified homeowner</div></div>
+      <div class="rev"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><p>"Very impressed with the crawl space cleanup. The team was professional, arrived on time, and explained everything clearly. Outstanding service and results from start to finish."</p><div class="who">Nina K.</div><div class="where">Verified homeowner</div></div>
+      <div class="rev"><div class="stars" aria-label="5 out of 5 stars">★★★★★</div><p>"A pipe burst overnight and flooded the kitchen. I called in the morning and was connected with a local crew the same day. Water gone, everything dried out. Lifesavers."</p><div class="who">Marcus B.</div><div class="where">Verified homeowner</div></div>
     </div>
   </div>
 </section>
 
 <!-- ============ FAQ ============ -->
-<section>
+<section aria-labelledby="faq-title">
   <div class="wrap">
     <div class="section-head">
       <div class="kicker">FAQ</div>
-      <h2>Common questions</h2>
+      <h2 id="faq-title">Common questions</h2>
     </div>
     <div class="faq-list">
       <div class="faq-item">
-        <button class="faq-q">What should I do immediately after water damage? <span class="pm">+</span></button>
-        <div class="faq-a"><div>Shut off the water source if you safely can and call us right away. Avoid the affected areas and don't attempt any electrical repairs. We'll connect you with a local pro who can respond quickly to assess the damage and begin cleanup.</div></div>
+        <button type="button" class="faq-q" aria-expanded="false" aria-controls="faq-a1" id="faq-q1">What should I do immediately after water damage? <span class="pm" aria-hidden="true">+</span></button>
+        <div class="faq-a" id="faq-a1" role="region" aria-labelledby="faq-q1"><div>Shut off the water source if you safely can and call us right away. Avoid the affected areas and don't attempt any electrical repairs. We'll connect you with a local pro who can respond quickly to assess the damage and begin cleanup.</div></div>
       </div>
       <div class="faq-item">
-        <button class="faq-q">How fast can someone respond? <span class="pm">+</span></button>
-        <div class="faq-a"><div>We prioritize urgent calls and aim to connect you with a local provider as fast as possible. Quick action is key to preventing further damage and mold growth, so emergencies come first. The fastest way is to call the number at the top of the page.</div></div>
+        <button type="button" class="faq-q" aria-expanded="false" aria-controls="faq-a2" id="faq-q2">How fast can someone respond? <span class="pm" aria-hidden="true">+</span></button>
+        <div class="faq-a" id="faq-a2" role="region" aria-labelledby="faq-q2"><div>We prioritize urgent calls and aim to connect you with a local provider as fast as possible. Quick action is key to preventing further damage and mold growth, so emergencies come first. The fastest way is to call the number at the top of the page.</div></div>
       </div>
       <div class="faq-item">
-        <button class="faq-q">Does insurance cover water damage? <span class="pm">+</span></button>
-        <div class="faq-a"><div>In many cases, yes — it depends on your policy and the source of the damage. The local providers we connect you with can work directly with your insurance company to help simplify the claims process.</div></div>
+        <button type="button" class="faq-q" aria-expanded="false" aria-controls="faq-a3" id="faq-q3">Does insurance cover water damage? <span class="pm" aria-hidden="true">+</span></button>
+        <div class="faq-a" id="faq-a3" role="region" aria-labelledby="faq-q3"><div>In many cases, yes — it depends on your policy and the source of the damage. The local providers we connect you with can work directly with your insurance company to help simplify the claims process.</div></div>
       </div>
       <div class="faq-item">
-        <button class="faq-q">How long does restoration take? <span class="pm">+</span></button>
-        <div class="faq-a"><div>It varies with the extent of the damage. Minor cases may take a few days, while larger projects can take longer. Your provider will give a clear estimate after inspecting the damage.</div></div>
+        <button type="button" class="faq-q" aria-expanded="false" aria-controls="faq-a4" id="faq-q4">How long does restoration take? <span class="pm" aria-hidden="true">+</span></button>
+        <div class="faq-a" id="faq-a4" role="region" aria-labelledby="faq-q4"><div>It varies with the extent of the damage. Minor cases may take a few days, while larger projects can take longer. Your provider will give a clear estimate after inspecting the damage.</div></div>
       </div>
       <div class="faq-item">
-        <button class="faq-q">Can mold develop after water damage? <span class="pm">+</span></button>
-        <div class="faq-a"><div>Yes — untreated moisture can lead to mold within 24 to 48 hours. That's why providers don't just remove the water but also dry the area thoroughly and use mold-prevention methods to protect your home.</div></div>
+        <button type="button" class="faq-q" aria-expanded="false" aria-controls="faq-a5" id="faq-q5">Can mold develop after water damage? <span class="pm" aria-hidden="true">+</span></button>
+        <div class="faq-a" id="faq-a5" role="region" aria-labelledby="faq-q5"><div>Yes — untreated moisture can lead to mold within 24 to 48 hours. That's why providers don't just remove the water but also dry the area thoroughly and use mold-prevention methods to protect your home.</div></div>
       </div>
       <div class="faq-item">
-        <button class="faq-q">Is this service really free? <span class="pm">+</span></button>
-        <div class="faq-a"><div>Yes. Connecting with a local provider through our site is free with no obligation. You discuss and agree on any service pricing directly with the provider.</div></div>
+        <button type="button" class="faq-q" aria-expanded="false" aria-controls="faq-a6" id="faq-q6">Is this service really free? <span class="pm" aria-hidden="true">+</span></button>
+        <div class="faq-a" id="faq-a6" role="region" aria-labelledby="faq-q6"><div>Yes. Connecting with a local provider through our site is free with no obligation. You discuss and agree on any service pricing directly with the provider.</div></div>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ============ FINAL CTA ============ -->
-<section class="final">
+<section class="final" aria-labelledby="final-title">
   <div class="wrap">
-    <h2>Water emergency? Get help now.</h2>
-    <p>Get connected with a local emergency plumbing & water damage restoration pro in minutes. 24/7 response, free to use, no obligation.</p>
+    <h2 id="final-title">Water emergency? Get help now.</h2>
+    <p>Get connected with a local emergency plumbing &amp; water damage restoration pro in minutes. 24/7 response, free to use, no obligation.</p>
     <div class="hero-cta-row">
-      <a href="tel:+18005550199" class="btn btn-cta">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <a href="tel:+18005550199" class="btn btn-cta" aria-label="Call now at (800) 555-0199">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
         Call (800) 555-0199
       </a>
       <a href="#quote" class="btn btn-ghost">Request online →</a>
@@ -429,20 +521,27 @@
   </div>
 </section>
 
+</main>
+
 <!-- ============ FOOTER + DISCLAIMERS ============ -->
 <footer>
   <div class="wrap">
     <div class="foot-top">
-      <a href="#" class="logo"><span class="drop">💧</span> Emergency Plumbing Service</a>
-      <div class="foot-links">
+      <a href="#" class="logo"><span class="drop" aria-hidden="true">💧</span> Emergency Plumbing Service</a>
+      <nav class="foot-links" aria-label="Footer">
         <a href="#quote">Request service</a>
         <a href="tel:+18005550199">Call us</a>
         <a href="privacy.html">Privacy Policy</a>
         <a href="terms.html">Terms of Service</a>
-      </div>
+      </nav>
     </div>
+    <p class="foot-contact">
+      <strong>Emergency Plumbing Service</strong> — a free referral &amp; matching service.
+      Questions? Email <a href="mailto:support@example.com">support@example.com</a> or call
+      <a href="tel:+18005550199">(800) 555-0199</a>.
+    </p>
     <div class="disclaimer">
-      <p><strong>Disclaimer:</strong> Emergency Plumbing Service is a free service to assist homeowners in connecting with local service providers. All contractors/providers are independent and Emergency Plumbing Service does not warrant or guarantee any work performed. It is the responsibility of the homeowner to verify that the hired contractor furnishes the necessary license and insurance required for the work being performed. All persons depicted in a photo or video are actors or models and not contractors listed on Emergency Plumbing Service.</p>
+      <p><strong>Disclaimer:</strong> Emergency Plumbing Service is a free service to assist homeowners in connecting with local service providers. We are a referral and matching service only — we do not perform plumbing or restoration work ourselves. All contractors/providers are independent and Emergency Plumbing Service does not warrant or guarantee any work performed. It is the responsibility of the homeowner to verify that the hired contractor furnishes the necessary license and insurance required for the work being performed. All persons depicted in a photo or video are actors or models and not contractors listed on Emergency Plumbing Service.</p>
       <p>Same-day and 24/7 emergency services are subject to provider participation, location, technician availability, and demand. Availability is not guaranteed and may vary by market and appointment capacity.</p>
     </div>
     <div class="copyright">© <span id="year"></span> Emergency Plumbing Service. All rights reserved.</div>
@@ -451,8 +550,8 @@
 
 <!-- ============ MOBILE STICKY CALL BAR ============ -->
 <div class="mobile-bar">
-  <a href="tel:+18005550199" class="btn btn-cta">
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+  <a href="tel:+18005550199" class="btn btn-cta" aria-label="Tap to call (800) 555-0199">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
     Tap to call (800) 555-0199
   </a>
 </div>
@@ -460,13 +559,19 @@
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
 
-  // FAQ accordion
+  // FAQ accordion (accessible: toggles aria-expanded)
   document.querySelectorAll('.faq-q').forEach(function(q){
     q.addEventListener('click', function(){
       var item = q.closest('.faq-item');
       var wasOpen = item.classList.contains('open');
-      document.querySelectorAll('.faq-item').forEach(function(i){i.classList.remove('open')});
-      if(!wasOpen) item.classList.add('open');
+      document.querySelectorAll('.faq-item').forEach(function(i){
+        i.classList.remove('open');
+        i.querySelector('.faq-q').setAttribute('aria-expanded','false');
+      });
+      if(!wasOpen){
+        item.classList.add('open');
+        q.setAttribute('aria-expanded','true');
+      }
     });
   });
 
@@ -496,22 +601,62 @@
     });
   });
 
-  // Lead form handler — REPLACE the TODO with your lead post / MarketCall integration
-  document.getElementById('leadForm').addEventListener('submit', function(e){
+  // ---------- Lead form: accessible inline validation ----------
+  var form = document.getElementById('leadForm');
+  var statusEl = document.getElementById('formStatus');
+
+  function setInvalid(input, invalid){
+    var field = input.closest('.field');
+    field.classList.toggle('invalid', invalid);
+    input.setAttribute('aria-invalid', invalid ? 'true' : 'false');
+  }
+
+  function validateField(input){
+    var v = (input.value || '').trim();
+    var ok = true;
+    if (input.id === 'phone'){
+      ok = (v.replace(/\D/g,'').length >= 10);
+    } else if (input.id === 'zip'){
+      ok = /^[0-9]{5}$/.test(v);
+    } else {
+      ok = v.length > 0;
+    }
+    setInvalid(input, !ok);
+    return ok;
+  }
+
+  // Clear the error as soon as the user fixes a field
+  ['name','phone','zip','service'].forEach(function(id){
+    var el = document.getElementById(id);
+    el.addEventListener('input', function(){ if(el.closest('.field').classList.contains('invalid')) validateField(el); });
+    el.addEventListener('change', function(){ validateField(el); });
+  });
+
+  form.addEventListener('submit', function(e){
     e.preventDefault();
-    var f = e.target;
-    if(!f.name.value || !f.phone.value || !f.zip.value || !f.service.value){
-      alert('Please fill out all fields so we can connect you.');
+    statusEl.textContent = '';
+    var fields = ['name','phone','zip','service'].map(function(id){ return document.getElementById(id); });
+    var firstInvalid = null;
+    fields.forEach(function(el){
+      if(!validateField(el) && !firstInvalid) firstInvalid = el;
+    });
+
+    if(firstInvalid){
+      statusEl.style.color = '#c62a1d';
+      statusEl.textContent = 'Please complete the highlighted fields so we can connect you.';
+      firstInvalid.focus();
       return;
     }
+
     // TODO: send lead data to your CRM / MarketCall offer endpoint here.
-    // Example: fetch('YOUR_LEAD_POST_URL', {method:'POST', body:new FormData(f)})
+    // Example: fetch('YOUR_LEAD_POST_URL', {method:'POST', body:new FormData(form)})
 
     // Record the Google Ads conversion for the submitted lead
     fireConversion(CONVERSIONS.form);
 
-    alert('Thanks! A local emergency pro will reach out shortly. For the fastest help, call (800) 555-0199.');
-    f.reset();
+    statusEl.style.color = '#0f7a3d';
+    statusEl.textContent = 'Thanks! A local emergency pro will reach out shortly. For the fastest help, call (800) 555-0199.';
+    form.reset();
   });
 </script>
 </body>
