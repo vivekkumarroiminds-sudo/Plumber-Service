@@ -3,3 +3,7 @@ Plumber-Service/
 
 # Local Claude Code config
 .claude/
+
+# Secrets — never commit
+.env
+.env.*
